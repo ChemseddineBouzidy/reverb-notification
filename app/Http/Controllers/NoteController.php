@@ -29,6 +29,7 @@ class NoteController extends Controller
         //     'message' => 'Note créée avec succès',
         //     'note' => $note->load('user')
         // ]);
+        return redirect()->route('note.index')->with('success', 'Note créée avec succès');
     }
 
     public function index()
